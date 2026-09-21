@@ -1,7 +1,7 @@
 # esgproject
 Python files which simulate an ESG, create a fan chart of the results, and then offers stochastic present value liability discounting and escalation, which provides a mean, median, VaR, and TVaR, as well as providing a comparison to a deterministic present value and creating a histogram of these results.
 
-Install all of the ".py" files and run "simulate.py" to replicate the results of this model, which are displayed in "esg_fan_chart.png" and "liabilities_pv_histogram.png".
+Install all of the ".py" files and run "simulate.py" to replicate the results of this model, which are displayed in "esg_fan_chart.png" and "liabilities_pv_histogram.png". The liability calculation for these results uses an inflation linked annuity of 1000 units of currency, with a confidence interval of 0.95.
 
 This Economic Scenario Generator (ESG) which is built in Python follows three models across 10 years and 10,000 paths.
 The three models which are linked together by their correlated shocks are as follows:
