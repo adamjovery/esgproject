@@ -5,7 +5,7 @@ Install all of the ".py" files and run "simulate.py" to replicate the results of
 
 This Economic Scenario Generator (ESG) which is built in Python follows three models across 10 years and 10,000 paths.
 The three models which are linked together by their correlated shocks are as follows:
-  1. Vasicek model to simulate the path of short-term interest rates - assuming they follow a mean reverting stochastic process.
+  1. Vasicek model to simulate the path of interest rates - assuming they follow a mean reverting stochastic process.
   2. Geometric Brownian Motion model to simulate the path of equity price levels - assuming they follow a stochastic process with their logarithm following a Brownian motion with drift.
   3. Ornstein-Uhlenbeck model to simulate the path of inflation rates - assuming they follow a mean reverting stochastic process.
 
