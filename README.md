@@ -7,7 +7,7 @@ The three models which are linked together by their correlated shocks are as fol
   2. Geometric Brownian Motion model to simulate the path of equity price levels - assuming they follow a stochastic process with their logarithm following a Brownian motion with drift.
   3. Ornstein-Uhlenbeck model to simulate the path of inflation rates - assuming they follow a mean reverting stochastic process.
 
-This is done by collecting the series data from FRED and Yahoo finance on 10-Year Treasury yield, CPI Year on Year percentage change, and the SPY ETF close. This data is then cleaned and the parameters of the models built from this data via OLS for the mean reverting models, and through expected returns for the GBM. The correlation matrix for these models is also found through the pearson correlation coefficients of the changes/log-returns within the series data.
+This is done by collecting the series data from FRED and Yahoo finance on the 10-Year Treasury yield, CPI Year on Year percentage change, and the SPY ETF close. This data is then cleaned and the parameters of the models built from this data via OLS for the mean reverting models, and through expected returns for the GBM. The correlation matrix for these models is also found through the Pearson correlation coefficients of the changes/log-returns within the series data.
 
 The correlated standard normal shocks are then found via a Cholesky decomposition which is performed on the correlation matrix, with the result of this being multiplied by the shock dimension of an array of randomly generated shocks from a normal distribution. 
 
