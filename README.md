@@ -1,5 +1,5 @@
 # esgproject
-Python files which simulate an ESG, create a fan chart of the results, and then offers stochastic present value liability discounting and escalation, which provides a mean, median, VaR, and TVaR, as well as providing a comparison to a deterministic present value and creating a histogram of these results.
+Python files which simulate an ESG, create a fan chart of the results, and then offer stochastic present value liability discounting and escalation. This provides a mean, median, VaR and TVaR levels, as well as a comparison to a deterministic present value and a histogram of the results.
 
 Install all of the ".py" files and run "simulate.py" to replicate the results of this model, which are displayed in "esg_fan_chart.png" and "liabilities_pv_histogram.png". The liability calculation for these results uses an inflation linked annuity of 1000 units of currency, with a confidence interval of 0.95.
 
