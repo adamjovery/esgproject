@@ -186,7 +186,7 @@ while record != True:
 
 #Repeats until a valid confidence interval is entered
 while record2 != True:
-    print("\nPlease enter your desired confidence interval for the VaR and TVaR in decimal form, \ngreater than or equal to 1 and less than or equal to 0")
+    print("\nPlease enter your desired confidence interval for the VaR and TVaR in decimal form, \nwith this being less than or equal to 1 and greater than or equal to 0")
     error2 = 0
     confidence = input()
 
