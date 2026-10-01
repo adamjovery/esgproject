@@ -1,7 +1,9 @@
 # esgproject
 Python files which simulate an ESG, create a fan chart of the results, and then offer stochastic present value liability discounting and escalation. This provides a mean, median, VaR and TVaR levels, as well as a comparison to a deterministic present value and a histogram of the results.
 
-Install all of the ".py" files and run "simulate.py" to replicate the results of this model, which are displayed in "esg_fan_chart.png" and "liabilities_pv_histogram.png". The liability calculation for these results uses an inflation linked annuity of 1000 units of currency, with a confidence interval of 0.95.
+Install all of the ".py" files except "covidrobust.py" and run "simulate.py" to replicate the results of this model, which are displayed in "esg_fan_chart.png" and "liabilities_pv_histogram.png". The liability calculation for these results uses an inflation linked annuity of 1000 units of currency, with a confidence interval of 0.95.
+
+The Python file "covidrobust.py" runs the ESG with three different specifications of the historical data range which are more robust to mean inflation from the shock caused by COVID. The results of these specifications are shown in "robust_fan_chart.png", "robust2_fan_chart.png", and "robust3_fan_chart.png".
 
 This Economic Scenario Generator (ESG) which is built in Python follows three models across 10 years and 10,000 paths.
 The three models which are linked together by their correlated shocks are as follows:
