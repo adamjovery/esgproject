@@ -31,7 +31,7 @@ def fan_chart(paths, T, ax, title, ylabel, as_percent=False):
         ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda y, _: f'{y*100:.1f}%'))
  
 #Function to build a 3-panel fan chart figure for the esg results
-def plot_esg_fan_charts(results, T, save_path=None):
+def plot_esg_fan_charts(results, T, subtitle=None, save_path=None):
     #Intialising a figure with three subplots
     fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 
@@ -41,7 +41,7 @@ def plot_esg_fan_charts(results, T, save_path=None):
     fan_chart(results["equity"], T, axes[2], "Equity Level (log-GBM)", "Index level", as_percent=False)
 
     #Arranging the fan charts on a single figure
-    fig.suptitle("Economic Scenario Generator: Simulated Paths", fontsize=14, fontweight='bold')
+    fig.suptitle(subtitle, fontsize=14, fontweight='bold')
     fig.tight_layout()
 
     #Checking if the figure is due to be saved and saving it if so
