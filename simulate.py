@@ -121,7 +121,7 @@ if model_go is True:
     rates, inflation, equity = results["rates"], results["inflation"], results["equity"]
     
     #Plotting the fan charts for the esg results
-    fan_chart = plot_esg_fan_charts(results, T=horizon, save_path=save_path_direction)
+    fan_chart = plot_esg_fan_charts(results, T=horizon, subtitle = "Economic Scenario Generator: Simulated Paths", save_path=save_path_direction)
     
     #Calibrating targets from the historical data
     b_rate = esg_inputs["rate_params"]["b"]
