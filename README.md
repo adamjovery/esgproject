@@ -11,7 +11,7 @@ The pre-specified reproducible ESG's results are shown in the files: "reproducib
 These results are built on a historical data window of 2006 to 2026, a normally distributed GARCH in the GBM, a base annual liability payment of 1000 currency units, a confidence level of 0.95, and an inflation linked liability. 
 
 Sample results of the range of 4 ESG's are shown in the files "window_range_fan_chart_year_range.png" and "window_range_histogram_year_range.png" 
-These results are built on historical data windows of 1999 to 2019, 2009 to 2019, 2006 to 2026, and 2016 to 2026; a GARCH with Student's T distribution in the GBM; a base annual liability payment of 1000 currency units; a confidence level of 0.95; and an inflation linked liability.
+These results are built on historical data windows of 1999 to 2019, 2009 to 2019, 2006 to 2026, and 2016 to 2026; a GARCH with a skewed Student's T distribution in the GBM; a base annual liability payment of 1000 currency units; a confidence level of 0.95; and an inflation linked liability.
 
 This Economic Scenario Generator (ESG) which is built in Python follows three models across 10 years and 10,000 paths. The three models which are linked together by their correlated shocks are as follows:
 
